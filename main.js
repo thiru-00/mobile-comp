@@ -1,4 +1,6 @@
-
+if (localStorage.getItem("loggedIn") !== "true") {
+  window.location.href = "login.html"; // Redirect to login if not logged in
+}
 let menu = document.querySelector('#menu-bars');
 let navbar = document.querySelector('.navbar');
 
