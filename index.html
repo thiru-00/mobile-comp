@@ -4,6 +4,18 @@
     if (localStorage.getItem("loggedIn") !== "true") {
      window.location.href = "login.html";
     }
+    if (localStorage.getItem("loggedIn") !== "true") {
+     window.location.href = "login.html";
+}
+
+// THEN YOUR EXISTING SCRIPT
+    let menu = document.querySelector('#menu-bars');
+    let navbar = document.querySelector('.navbar');
+
+    menu.onclick = () => {
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
 </script>
       
 <head>
